@@ -11,7 +11,7 @@ script:
     - docker build -t evgenik22/multi-worker ./worker
 after_success:
     - docker login -u $DOCKER_ID -p $DOCKER_PASSWORD 
-    - docker push evgenik22/multi-client 
-    - docker push evgenik22/multi-server 
-    - docker push evgenik22/multi-ngnix  
-    - docker push evgenik22/multi-worker 
+    - docker push evgenik22/multi-client:latest 
+    - docker push evgenik22/multi-server:latest 
+    - docker push evgenik22/multi-ngnix:latest  
+    - docker push evgenik22/multi-worker:latest 
