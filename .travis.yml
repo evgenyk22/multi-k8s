@@ -10,7 +10,7 @@ after_success:
     - docker build -t evgenik22/multi-server ./server
     - docker build -t evgenik22/multi-ngnix  ./ngnix
     - docker build -t evgenik22/multi-worker ./worker
-    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_NAME" --password-stdin      
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin      
     - docker push evgenik22/multi-client 
     - docker push evgenik22/multi-server 
     - docker push evgenik22/multi-ngnix  
