@@ -13,5 +13,5 @@ after_success:
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_NAME" --password-stdin      
     - docker push evgenik22/multi-client 
     - docker push evgenik22/multi-server 
-     -docker push evgenik22/multi-ngnix  
-     -docker push evgenik22/multi-worker 
+    - docker push evgenik22/multi-ngnix  
+    - docker push evgenik22/multi-worker 
