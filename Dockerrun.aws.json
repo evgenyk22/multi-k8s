@@ -27,7 +27,7 @@
       "name": "nginx",
       "image":  "evgenik22/multi-nginx",
       "hostname": "nginx",
-      "essential": "true",
+    "essential": "true",
       "portMappings": [
           {
           "hostPort": 80,
