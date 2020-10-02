@@ -11,11 +11,11 @@ script:
 after_success:
     - docker build -t evgenik22/multi-client ./client
     - docker build -t evgenik22/multi-server ./server
-    - docker build -t evgenik22/multi-ngnix  ./ngnix
+    - docker build -t evgenik22/multi-nginx  ./ngnix
     - docker build -t evgenik22/multi-worker ./worker
     - docker login -u $DOCKER_ID -p $DOCKER_PASSWORD
     - docker push evgenik22/multi-server:latest 
-    - docker push evgenik22/multi-ngnix:latest  
+    - docker push evgenik22/multi-nginx:latest  
     - docker push evgenik22/multi-client:latest 
     - docker push evgenik22/multi-worker:latest 
 deploy:
