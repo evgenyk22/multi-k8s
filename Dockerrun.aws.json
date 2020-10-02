@@ -10,7 +10,7 @@
       "memory": 128
   },
   {
-      "name": "api",
+      "name": "server",
       "image":  "evgenik22/multi-server",
       "hostname": "api",
       "essential": "false",
@@ -34,7 +34,7 @@
           "containerPort": 80
           }
       ],
-      "links": ["client","api"],
+      "links": ["client","server"],
       "memory": 128
   }
   ]
