@@ -1,5 +1,7 @@
+#!/bin/bash
+
 docker build -t evgenik22/multi-client:latest -t evgenyk22/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t evgenik22/multi-server:latest -t evgenyk22/mylti-server:$SHA -f ./server/Dockerfile ./server
+docker build -t evgenik22/multi-server:latest -t evgenyk22/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t evgenik22/multi-worker:latest -t evgenik22/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push evgenik22/multi-client:latest
